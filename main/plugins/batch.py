@@ -4,10 +4,8 @@ Plugin for both public & private channels!
 
 import time, os, asyncio
 
-from .. import bot as Drone
+
 from .. import userbot, Bot, AUTH
-from .. import FORCESUB as fs
-from main.plugins.pyroplug import get_bulk_msg
 from main.plugins.helpers import get_link, screenshot
 
 from telethon import events, Button, errors
