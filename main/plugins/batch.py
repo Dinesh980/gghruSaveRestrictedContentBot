@@ -109,7 +109,7 @@ async def run_batch(userbot, client, sender, link, _range):
             if int(fw.x) > 2999:
                 await client.send_message(sender, "Cancelling batch since you have floodwait more than 2 minutes.")
                 break
-            await asyncio.sleep(fw.x + 10)
+            await asyncio.sleep
             await get_bulk_msg(userbot, client, sender, link, i)
         protection = await client.send_message(sender, f"Sleeping for `{timer}` seconds to avoid Floodwaits and Protect account!")
         await asyncio.sleep(timer)
