@@ -106,7 +106,7 @@ async def run_batch(userbot, client, sender, link, _range):
         try:
             await get_bulk_msg(userbot, client, sender, link, i) 
         except FloodWait as fw:
-            if int(fw.x) > 2999:
+            if int(fw.x) > 10000000:
                 await client.send_message(sender, "Cancelling batch since you have floodwait more than 2 minutes.")
                 break
             await asyncio.sleep
